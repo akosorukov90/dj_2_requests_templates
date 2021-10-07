@@ -22,5 +22,5 @@ def bus_stations(request):
     page_objects = page.object_list
     return render(request, 'stations/index.html', context={
         'bus_stations': page_objects,
-        'page': page_number,
+        'page': page,
     })
